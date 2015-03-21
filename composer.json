@@ -1,0 +1,40 @@
+{
+	"name": "ondrejd/odtimetracker-php-cli",
+	"description": "odTimeTracker CLI application.",
+	"version": "1.0.0",
+	"type": "application",
+	"keywords": ["time tracking", "office", "productivity"],
+	"homepage": "https://github.com/odTimeTracker/odtimetracker-php-cli",
+	"license": "MPL-2.0",
+	"authors": [{
+		"name": "Ondrej Donek",
+		"email": "ondrejd@gmail.com",
+		"homepage": "http://ondrejdonek.blogspot.com/",
+		"role": "Developer"
+	}],
+	"support": {
+		"issues": "https://github.com/odTimeTracker/odtimetracker-php-cli/issues",
+		"source": "https://github.com/odTimeTracker/odtimetracker-php-cli"
+	},
+	"repositories": [{
+		"type": "composer",
+		"url": "https://packages.zendframework.com/"
+	}],
+	"autoload": {
+		"psr-4": {
+			"odTimeTracker\\": "src/"
+		},
+		"classmap": [
+			"./"
+		]
+	},
+	"require": {
+		"php": ">=5.4",
+		"zendframework/zendframework": ">=2.3.4",
+		"odtimetracker/odtimetracker-php-library": "dev-master"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "@stable",
+		"phpmd/phpmd" : "@stable"
+	}
+}

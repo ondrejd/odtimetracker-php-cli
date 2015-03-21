@@ -1,0 +1,6 @@
+.directory
+composer.lock
+docs/generated/api
+docs/generated/tests-coverage-report
+nbproject
+vendor

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   - odTimeTracker CLI Application (PHP version).
+   - 
+   - @link https://github.com/odTimeTracker/odtimetracker-php-library for the canonical source repository
+   - @copyright Copyright (c) 2015 Ondrej Donek (https://ondrejdonek.blogspot.com).
+   - @license https://www.mozilla.org/MPL/2.0/ Mozilla Public License 2.0
+   - @author Ondrej Donek, <ondrejd@gmail.com>
+   -->
+<phpunit  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.2/phpunit.xsd">
+	<testsuites>
+		<testsuite name="odTimeTrackerCli Tests">
+			<directory>./odTimeTrackerCliTest</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

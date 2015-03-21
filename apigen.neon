@@ -1,0 +1,20 @@
+title: "odTimeTracker"
+destination: docs/generated/api
+sourceCode: yes
+todo: yes
+php: no
+
+charset: 
+	- UTF-8
+
+accessLevels: 
+	- public
+	- protected
+	- private
+
+source:
+	- module/odTimeTrackerCli/src
+	- vendor/odtimetracker/odtimetracker-php-library/src
+
+exclude: 
+	- vendor
