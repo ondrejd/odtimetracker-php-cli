@@ -21,6 +21,15 @@ return array(
 						),
 					),
 				),
+				'odtimetrackercli_install' => array(
+					'options' => array(
+						'route' => 'install',
+						'defaults' => array(
+							'controller' => 'odTimeTrackerCli\Controller\Install',
+							'action' => 'install',
+						),
+					),
+				),
 				'odtimetrackercli_start' => array(
 					'options' => array(
 						'route' => 'start <activityString>',
@@ -43,9 +52,19 @@ return array(
 		),
 	),
 	'controllers' => array(
-		'invokables' => array(
-			'odTimeTrackerCli\Controller\Index' => 'odTimeTrackerCli\Controller\IndexController',
-			'odTimeTrackerCli\Controller\Activity' => 'odTimeTrackerCli\Controller\ActivityController',
+		'factories' => array(
+			'odTimeTrackerCli\Controller\Index' => 'odTimeTrackerCli\Controller\CommonFactory',
+			'odTimeTrackerCli\Controller\Install' => 'odTimeTrackerCli\Controller\CommonFactory',
+			'odTimeTrackerCli\Controller\Activity' => 'odTimeTrackerCli\Controller\CommonFactory',
+		),
+	),
+	'translator' => array(
+		'translation_file_patterns' => array(
+			array(
+				'type' => 'gettext',
+				'base_dir' => __DIR__ . '/../language',
+				'pattern' => '%s.mo',
+			),
 		),
 	),
 );

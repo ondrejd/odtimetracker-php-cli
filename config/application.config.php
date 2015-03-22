@@ -28,4 +28,9 @@ return array(
 		//'cache_dir' => './data/cache',
 		//'check_dependencies' => true,
 	),
+	'service_manager' => array(
+		'factories' => array(
+			'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
+		),
+	),
 );

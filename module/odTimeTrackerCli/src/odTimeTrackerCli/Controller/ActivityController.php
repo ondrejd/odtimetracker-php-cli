@@ -11,7 +11,6 @@ namespace odTimeTrackerCli\Controller;
 
 //use Zend\Console\Request as ConsoleRequest;
 use Zend\Console\ColorInterface as ConsoleColor;
-use Zend\Mvc\Controller\AbstractActionController;
 
 /**
  * Activity controller.
@@ -20,7 +19,7 @@ use Zend\Mvc\Controller\AbstractActionController;
  * @subpackage Controller
  * @author Ondrej Donek, <ondrejd@gmail.com>
  */
-class ActivityController extends AbstractActionController
+class ActivityController extends CommonController
 {
 	/**
 	 * Start activity
@@ -31,7 +30,7 @@ class ActivityController extends AbstractActionController
 	{
 		$console = $this->getServiceLocator()->get('console');
 
-		$console->writeLine('OK', ConsoleColor::LIGHT_GREEN);
+		$console->writeLine('OK', ConsoleColor::GREEN);
 	}
 
 	/**
@@ -43,6 +42,6 @@ class ActivityController extends AbstractActionController
 	{
 		$console = $this->getServiceLocator()->get('console');
 
-		$console->writeLine('OK', ConsoleColor::LIGHT_GREEN);
+		$console->writeLine('OK', ConsoleColor::GREEN);
 	}
 }

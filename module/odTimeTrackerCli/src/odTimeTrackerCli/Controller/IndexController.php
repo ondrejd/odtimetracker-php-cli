@@ -9,9 +9,8 @@
 
 namespace odTimeTrackerCli\Controller;
 
-use Zend\Console\Request as ConsoleRequest;
+use odTimeTrackerLib\Db;
 use Zend\Console\ColorInterface as ConsoleColor;
-use Zend\Mvc\Controller\AbstractActionController;
 
 /**
  * Main controller.
@@ -20,7 +19,7 @@ use Zend\Mvc\Controller\AbstractActionController;
  * @subpackage Controller
  * @author Ondrej Donek, <ondrejd@gmail.com>
  */
-class IndexController extends AbstractActionController
+class IndexController extends CommonController
 {
 	/**
 	 * Main action
@@ -30,7 +29,33 @@ class IndexController extends AbstractActionController
 	public function indexAction()
 	{
 		$console = $this->getServiceLocator()->get('console');
+		$activityTable = new Db\TableGateway\ActivityTable();
 
-		$console->writeLine('OK', ConsoleColor::LIGHT_GREEN);
+		try {
+			$runningActivity = $activityTable->getRunningActivity();
+
+			if ($runningActivity instanceof Db\Model\ActivityEntity) {
+				\Zend\Debug\Debug::dump($runningActivity);
+			} else {
+				$console->writeLine(
+					$this->translator->translate('There is no running activity.')
+				);
+			}
+		} catch(\PDOException $exception) {
+			if ($exception->getCode() == 'HY000') {
+				$console->writeLine($this->translator->translate(
+					'Error: Activity table does not exists! Please check your installation.'
+					), ConsoleColor::RED
+				);
+			} else {
+				$console->writeLine(
+					sprintf($this->translator->translate(
+						'Error: Unexpected error occured when trying access database. Error message: "%s".'
+						), $exception->getMessage()
+					),
+					ConsoleColor::RED
+				);
+			}
+		}
 	}
 }

@@ -2,53 +2,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: odTimeTrackerCli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-22 17:52+0100\n"
+"POT-Creation-Date: 2015-03-22 17:55+0100\n"
 "PO-Revision-Date: 2015-03-22 17:56+0100\n"
 "Last-Translator: Ondřej Doněk <ondrejd@gmail.com>\n"
 "Language-Team: Ondřej Doněk <ondrejd@gmail.com>\n"
-"Language: cs_CZ\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.7.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../Module.php:81
 msgid "Main usage"
-msgstr "Hlavní příkazy"
+msgstr ""
 
 #: ../Module.php:82
 msgid "Info about current application's state"
-msgstr "Informace o aktuálním stavu aplikace."
+msgstr ""
 
 #: ../Module.php:83
 msgid "Installation and configuration wizard"
-msgstr "Průvodce instalací a nastavením"
+msgstr ""
 
 #: ../Module.php:86
 msgid "Start new activity"
-msgstr "Zahájit novou aktivitu"
+msgstr ""
 
 #: ../Module.php:87
 msgid "Definition of a new activity"
-msgstr "Definice nové aktivity"
+msgstr ""
 
 #: ../Module.php:88
 msgid "Stop currently running activity"
-msgstr "Zastavit aktuálně probíhající aktivitu"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/IndexController.php:41
 msgid "There is no running activity."
-msgstr "Momentálně žádná aktivita neprobíhá."
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/IndexController.php:47
 msgid "Error: Activity table does not exists! Please check your installation."
-msgstr ""
-"Chyba: Databázová tabulka neexistuje! Zkontolujte si instalaci aplikace."
+msgstr "Error: Database table does not exists! Please check your installation."
 
 #: ../src/odTimeTrackerCli/Controller/IndexController.php:53
 #, php-format
@@ -56,54 +55,51 @@ msgid ""
 "Error: Unexpected error occured when trying access database. Error message: "
 "\"%s\"."
 msgstr ""
-"Chyba: Při spojení s databází se vyskytla neočekávaná chyba. Zpráva chyby: "
-"\"%s\"."
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:44
 msgid "Do you want to proceed with installation? [y/n]:"
-msgstr "Skutečně chcete spustit instalační proces? [a/n]"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:45
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:64
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:84
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:112
 msgid "y"
-msgstr "a"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:46
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:65
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:85
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:113
 msgid "n"
-msgstr "n"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:61
 #, php-format
 msgid "Do you want to use existing configuration file (%s)? [y/n]"
-msgstr "Chcete použít již existující konfigurační soubor (%s)? [a/n]"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:81
 #, php-format
 msgid "Do you want to use default location for configuration file (%s)? [y/n]"
-msgstr "Chcete použít defaultní umístění konfiguračního souboru (%s)? [a/n]"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:93
 msgid "Enter full path to directory for configuration file:"
-msgstr "Zadejte plnou cestu ke složce, kde chcete umístit konfigurační soubor:"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:98
 msgid "Entered path is not a valid directory! Exiting..."
-msgstr "Zadaná cesta nevede k adresáři! Ukončuji aplikaci..."
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:109
 #, php-format
 msgid "Do you really want to create configuration file (%s)? [y/n]"
-msgstr "Opravdu chcete vytvořit konfigurační soubor (%s)? [a/n]"
+msgstr ""
 
 #: ../src/odTimeTrackerCli/Controller/InstallController.php:119
 msgid "Can't continue without creating a configuration file! Exiting..."
 msgstr ""
-"Bez vytvoření konfiguračního souboru nelze pokračovat. Ukončuji aplikaci..."
 
 #~ msgid "Skeleton Application"
 #~ msgstr "Skeleton aplikace"
